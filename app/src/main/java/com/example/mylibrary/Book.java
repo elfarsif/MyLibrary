@@ -9,8 +9,9 @@ public class Book {
     private String shortDesc;
     private String longDesc;
 
-    public Book(int id, String author, int pages, String imageUrl, String shortDesc, String longDesc) {
+    public Book(int id,String name, String author, int pages, String imageUrl, String shortDesc, String longDesc) {
         this.id = id;
+        this.name=name;
         this.author = author;
         this.pages = pages;
         this.imageUrl = imageUrl;
