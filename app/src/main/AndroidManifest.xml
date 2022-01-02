@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyLibrary">
         <activity
+            android:name=".ActivityWantToRead"
+            android:exported="false" />
+        <activity
+            android:name=".AlreadyReadBookActivity"
+            android:exported="false" />
+        <activity
             android:name=".BookActivity"
             android:exported="false" />
         <activity
