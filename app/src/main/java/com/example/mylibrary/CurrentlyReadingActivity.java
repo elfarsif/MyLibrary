@@ -7,14 +7,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 
-public class FavoriteActivity extends AppCompatActivity {
+public class CurrentlyReadingActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_favorite);
+        setContentView(R.layout.activity_currently_reading);
 
         initData();
 
@@ -22,7 +22,7 @@ public class FavoriteActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        adapter.setBooks(Utils.getFavoriteBooks());
+        adapter.setBooks(Utils.getCurrentlyReadingBooks());
     }
 
     private void initData() {
